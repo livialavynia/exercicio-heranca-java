@@ -1,25 +1,22 @@
 ## Questão 1
 
-# Enunciado:
-
-1. Importe o projeto transacoesBancarias.zip no eclipse e execute o programa principal. Em
-seguida, evolua o sistema para atender às regras de negócio apresentadas a seguir. Utilize
-exceções para sinalizar erros.
-- Para obter o saldo, deve-se verificar a corretude da senha (usar método validarSenha)
-- Caso a senha seja validada, deve-se devolver o saldo
-- Caso a senha não seja validada, deve-se sinalizar o erro “ErroPermissaoException”
-- Para o depósito, só são permitidos valores positivos
-- Caso seja fornecido um valor positivo, deve-se realizar o depósito desse valor.
-- Caso seja fornecido um valor <= 0, deve-se sinalizar o erro “ErroValorException”
-- Para saques, só é permitido realizar se a senha for correta
-- Caso a senha seja validada, deve-se prosseguir com a operação do saque
-- Caso a senha não seja validada, deve-se sinalizar o erro “ErroPermissaoException”
-- Para saques, só é permitido sacar valores positivos e que tenham saldo suficiente
-- Caso seja fornecido um valor positivo, deve-se verificar a existência de saldo.
-- Se houver saldo suficiente, deve-se efetuar o saque normalmente.
-- Se não houver saldo suficiente, deve-se sinalizar o erro “ErroSaldoException”
-- Caso seja fornecido um valor <= 0, deve-se sinalizar o erro “ErroValorException”
-- Para saques em contas corrente, pode-se ter saldo negativo, desde que não ultrapasse o
-limite disponível
-- Se mesmo somando o saldo e o limite o valor não for suficiente, deve-se sinalizar o erro
-“ErroSaldoException”
+1) A fim de representar empregados em uma firma, crie uma classe chamada
+Empregado que herda as características de uma classe Pessoa, incluindo as
+seguintes características:
+# Atributos
+- Salário mensal
+- Cargo
+- Endereço: o endereço deve ser um objeto da classe Endereço.
+# Construtores:
+- Um constructor para inicializar os três atributos e os dados pessoais
+para classe Pessoa
+- Um constructor para inicializar apenas o salário os dados pessoais
+para classe Pessoa
+- Um constructor para inicializar salário e cargo os dados pessoais para
+classe Pessoa
+# Métodos
+- Obter valores dos atributos
+- Atualizar os valores dos atributos.
+– Restrições
+- Um salário não pode ter seu valor negativo. Logo, ao atualizar salário,
+deve-se verificar sua consistência
